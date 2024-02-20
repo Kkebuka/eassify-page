@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.first-page {
+    width: 100%;
+    height: auto;
+    height: 700px;
+    /* background-image: url(images/jbtech.jpg); */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 15px 50px;
+    border: 2px red solid;
+}
+img {
+    width: 160px;
+    height: 50px;
+}
+.menu {
+    margin-left: auto;
+}
+.body-content {
+    width: 100%;
+
+}
+.stay-soon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.stay {
+    color: rgb(35,169,74);
+}
+.coming {
+    font-size: 2rem;
+    color: rgb(35,51,104);
+    
+}
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.count-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(35,51,104);;
+}
+.time {
+    width: 130px;
+    height: 130px;
+    border: 2px solid rgb(35,51,104);
+    border-radius: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(35,51,104);
+    font-size: 2.8rem;;
+}
+.waitlist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.join{
+    color: rgb(35,51,104);
+}
+#notify {
+    text-decoration: none;
+}
+.info{
+    display: flex;
+    justify-content: center;
+}
+#notify{
+    background-color: rgb(33,169,68);
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-content {
+    width: 100%;
+    background-color: rgb(35,169,74);
+    padding: 0px 200px;
+}
+.about-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.item {
+    text-align: center;
+    color: aliceblue;
+}
+
+.process {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.nav{
+    background-color: red;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    position: fixed;
+    z-index: 30;
+    bottom: 20px;
+    right: 20px;
+}
+a{
+    scroll-behavior: smooth;
+}
