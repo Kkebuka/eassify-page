@@ -17,14 +17,15 @@ body {
     border: 2px solid rebeccapurple;
     height: 20px;
     z-index: 12;
-    height: 700px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.856);
 }
 
 .first-page {
     position: relative;
     width: 100%;
     height: auto;
-    height: 700px;
+    height: 650px;
     background-image: url(images/jbtech.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -35,8 +36,7 @@ body {
 header {
     width: 100%;
     display: flex;
-    padding: 15px 50px;
-    border: 2px red solid;
+    padding: 25px 80px;
 }
 img {
     width: 160px;
@@ -44,6 +44,14 @@ img {
 }
 .menu {
     margin-left: auto;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(35,51,104);
+    margin-top: 10px;
+}
+.menu:hover{
+    color: rgb(35,169,74);;
+    font-size: 1.6rem;
 }
 .body-content {
     width: 100%;
@@ -58,6 +66,7 @@ img {
 }
 .stay {
     color: rgb(35,169,74);
+    margin-bottom: 0px;
 }
 .coming {
     font-size: 2rem;
@@ -75,7 +84,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(35,51,104);;
+    color: rgb(35,51,104);
 }
 .time {
     width: 120px;
@@ -92,20 +101,24 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .join{
     color: rgb(35,51,104);
 }
-#notify {
-    text-decoration: none;
+#notify:hover {
+    color: rgb(209, 217, 224);
+    background-color: rgb(16, 122, 48);
 }
+
 .info{
     display: flex;
     justify-content: center;
     gap: 5px;
+    margin-top: 10px;
 }
 #notify{
-    background-color: rgb(33,169,68);
+    background-color: rgb(35,169,74);
     border-radius: 5px;
     color: white;
     width: 120px;
@@ -114,26 +127,45 @@ img {
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    text-decoration: none;
 }
 .text-content {
     width: 100%;
     background-color: rgb(35,169,74);
-    padding: 0px 200px;
+    display: flex;
+    justify-content: center;
+}
+.text-div {
+    width: 95%;
+    border: 2px solid red;
+    max-width: 1100px;
 }
 .about-div {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
+    color: aliceblue;
 }
 .mission-vision {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
+    padding: 0px 30px;
 
 }
 .item {
     text-align: center;
     color: aliceblue;
+    scale: 0.8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 30%;
+}
+@keyframes fade-in {
+    from{scale: 0.8; opacity: 0;} 
+    to{scale: 1; opacity: 1;}   
 }
 
 .process {
@@ -157,7 +189,7 @@ footer{
     color: white;
 }
 .nav{
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.582);
     color: white;
     width: 40px;
     height: 40px;
@@ -166,7 +198,16 @@ footer{
     z-index: 30;
     bottom: 20px;
     right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-a{
-    scroll-behavior: smooth;
+#about-text {
+    font-size: 3rem;
+}
+.fa-solid, .fa-regular {
+    font-size: 2rem;
+}
+.process-div{
+    margin-top: 50px;
 }
