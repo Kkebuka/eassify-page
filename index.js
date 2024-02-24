@@ -16,13 +16,13 @@ function calculateTimeLeft(){
     const hour = Math.floor((t % (24*60*60*1000)) / (60*60*1000));
     const minutes = Math.floor ((t % (60*60*1000) / (60*1000)));
     const seconds = Math.floor ((t%(60*1000) / 1000));
-    console.log(time)
+
 
     const values = [month, day, hour, minutes, seconds];
 
     time.forEach(function(item, index){
         let digit = item.innerHTML = values[index];
-        console.log(digit)
+        
         if(digit < 10){
             item.innerHTML = `0 ${values[index]}`
         }
@@ -38,3 +38,33 @@ function startCountdown(){
 
 
 calculateTimeLeft()
+document.addEventListener("DOMContentLoaded", animationEffect)
+
+
+function animationEffect(){
+    
+    const times = document.querySelectorAll('.count-div');
+    
+    
+
+
+    times.forEach((time, index) => {
+
+
+        time.style.scale = '1'
+        time.style.opacity = '1'
+        setTimeout(() => {
+            time.style.transform = 'translateY(0)';
+        }, index * 100);
+    });
+
+};
+
+const stayText = document.querySelector('#stays');
+
+function dropElement(){
+setTimeout(stayText.style.transform = 'translateY(0)', 1000);
+}
+
+window.onload = dropElement
+
