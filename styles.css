@@ -267,8 +267,7 @@ footer{
         padding: 25px 20px;
     }
 
-    h3{
-        /* font-size: 4rem; */
+
     }
     .menu {
         font-size: 1.3rem;
@@ -276,7 +275,6 @@ footer{
     }
 
     .menu:hover{
-        color: rgb(35,169,74);;
         font-size: 1.5rem;
     }
     .time {
