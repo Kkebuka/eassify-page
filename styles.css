@@ -49,6 +49,10 @@ img {
     color: rgb(35,51,104);
     margin-top: 10px;
 }
+h3, h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 2.0rem;
+}
 .menu:hover{
     color: rgb(35,169,74);;
     font-size: 1.6rem;
@@ -63,7 +67,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 1s all;
+    transition: 1.5s all;
     transform: translateY(-100%);
 }
 .stay-text {
@@ -145,7 +149,6 @@ img {
 }
 .text-div {
     width: 95%;
-    border: 2px solid red;
     max-width: 1100px;
 }
 .about-div {
@@ -154,6 +157,7 @@ img {
     justify-content: center;
     text-align: center;
     color: aliceblue;
+    font-family: "Montserrat", Sans-serif;;
 }
 .mission-vision {
     display: flex;
@@ -170,6 +174,10 @@ img {
     animation-timeline: view();
     animation-range-start: cover;
     animation-range-end: 30%;
+}
+item  p {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8rem;
 }
 @keyframes fade-in {
     from{scale: 0.8; opacity: 0;} 
@@ -222,7 +230,8 @@ footer{
 
 @media (max-width: 1000px){
     h3, h2{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
     }
     .about-us {
         width: 100%;
@@ -275,8 +284,8 @@ footer{
         font-size: 1.5rem;
     }
     .time {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         font-size: 1.1rem;
     }
     .info{
